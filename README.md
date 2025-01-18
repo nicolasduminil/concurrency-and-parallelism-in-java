@@ -19,7 +19,7 @@ But beyond this most essential difference, there others very important ones,
 for example:
 
   - **Efficiency**: measured in latency (the amount of time required to complete a task) for parallelism and in throughput (the number of completed tasks) for concurrency.
-  - **Resource allocation (CPU time, I/O, etc.)**: controlled by tasks in the case of the parallelism but not in the case of the concurrency, where threads cannot control resources allocation, but compete each other in order to gain it.
+  - **Resource allocation (CPU time, I/O, etc.)**: controlled by tasks in the case of the parallelism but not in the case of the concurrency, where threads cannot control resources allocation, but compete each other in order to gain them.
   - **Modus operandi**: In parallelism, threads operate on CPU cores in such a way that every core is busy. In concurrency, threads operate on tasks in such a way that, ideally, each thread executes a separate task.
 
 In order to understand the differences between concurrency and parallelism, let's
@@ -27,7 +27,7 @@ look at a couple of examples. Let's suppose that we have 100 millions numbers
 that we need to filter such that to extract from them the list of odd numbers.
 
 A very simple solution to this problem is implemented by the `SimpleFilter` class
-that you may find in the [GitHub project]():
+that you may find in the [GitHub project](https://github.com/nicolasduminil/concurrency-and-parallelism-in-java):
 
     public void testSimpleFilter()
     {
